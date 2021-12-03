@@ -9,7 +9,7 @@
         h1 {
             text-align: center;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: red;
+            color: salmon;
         }
 
         footer {
@@ -17,11 +17,117 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             color: white;
         }
+
+        table {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+
+        }
+
+        td {
+            border: 1px solid black;
+            text-align: left;
+            padding: 10px;
+            color: white;
+            text-align: center;
+        }
+
+        th {
+            border: 1px solid black;
+            text-align: left;
+            padding: 10px;
+            color: salmon;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background-color: ;
+        }
     </style>
 </head>
 
 <body style="background-color: gray;">
-    <h1>Aquest és el calendari del curs IFC21D</h1>
+    <h1>Aquest és l'horari del curs IFC21D</h1>
+    <table>
+        <tr>
+            <th>Hora</th>
+            <th>Dilluns</th>
+            <th>Dimarts</th>
+            <th>Dimecres</th>
+            <th>Dijous</th>
+            <th>Divendres</th>
+        </tr>
+        <tr>
+            <!--Hora del viernes-->
+            <td style="color: salmon;"> 14:05/15:00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Aplicacions Web</td>
+        </tr>
+        <tr>
+            <!--Primera hora-->
+            <td style="color: salmon;">15:00/15:55</td>
+            <td>Aplicacions Web</td>
+            <td>Sist. op. xarxa</td>
+            <td>Serveis en xarxa</td>
+            <td>Serveis en xarxa</td>
+            <td>Aplicacions Web</td>
+        </tr>
+        <tr>
+            <!--Segunda hora-->
+            <td style="color: salmon;">15:55/16:50</td>
+            <td>Aplicacions Web</td>
+            <td>Sist. op. xarxa</td>
+            <td>Sist. op. xarxa</td>
+            <td>Serveis en xarxa</td>
+            <td>Aplicacions Web</td>
+        </tr>
+        <tr>
+            <!--Tercera hora-->
+            <td style="color: salmon;">16:50/17:55</td>
+            <td>Empresa emprenedora</td>
+            <td>Sist. op. xarxa</td>
+            <td>Sist. op. xarxa</td>
+            <td>Serveis en xarxa</td>
+            <td>Empresa emprenedora</td>
+        </tr>
+        <tr>
+            <!--Hora del patio-->
+            <td style="color: salmon;">18:15/19:10</td>
+            <td colspan="5">PATIO</td>
+        </tr>
+        <tr>
+            <!--Cuarta hora-->
+            <td style="color: salmon;">18:15/19:10</td>
+            <td>Empresa emprenedora</td>
+            <td>Serveis en xarxa</td>
+            <td>Sist. op. xarxa</td>
+            <td>Sist. op. xarxa</td>
+            <td>Serveis en xarxa</td>
+        </tr>
+        <tr>
+            <!--Quinta hora-->
+            <td style="color: salmon;"> 19:10/20:05</td>
+            <td>Serveis en xarxa</td>
+            <td>Seguretat informàtica</td>
+            <td>Seguretat informàtica</td>
+            <td>Sist. op. xarxa</td>
+            <td>Seguretat informàtica</td>
+        </tr>
+        <tr>
+            <!--Sexta hora-->
+            <td style="color: salmon;">20:05/21:00</td>
+            <td>Serveis en xarxa</td>
+            <td>Seguretat informàtica</td>
+            <td>Seguretat informàtica</td>
+            <td>Sist. op. xarxa</td>
+            <td>Seguretat informàtica</td>
+        </tr>
+    </table>
+
     <footer>
         <p>Pitja aquí per tornar a la pàgina principal: <a href="../index.html">Home</a></p>
     </footer>
