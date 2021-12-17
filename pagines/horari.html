@@ -11,6 +11,35 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             color: salmon;
         }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            float: left;
+        }
+
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: cadetblue;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
 
         footer {
             text-align: center;
@@ -42,13 +71,20 @@
         }
 
         tr:nth-child(even) {
-            background-color: ;
+            background-color: gray;
         }
     </style>
 </head>
 
 <body style="background-color: gray;">
     <h1>Aquest és l'horari del curs IFC21D</h1>
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../pagines/holamon.html">Hola món</a></li>
+        <li><a href="../pagines/rellotge.html">Rellotge</a></li>
+        <li><a href="../pagines/calendari.html">Google Calendar</a></li>
+        <li style="float:left"><a class="active" href="#horari">Horari</a></li>
+    </ul>
     <table>
         <tr>
             <th>Hora</th>
@@ -124,10 +160,6 @@
             <td>Seguretat informàtica</td>
         </tr>
     </table>
-
-    <footer>
-        <p>Pitja aquí per tornar a la pàgina principal: <a href="../index.html">Home</a></p>
-    </footer>
 </body>
 
 </html>

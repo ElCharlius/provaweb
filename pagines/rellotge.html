@@ -10,18 +10,43 @@
             font-size: 50px;
             text-align: center;
             color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            float: left;
+        }
+
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: cadetblue;
+        }
+
+        .active {
+            background-color: #04AA6D;
         }
 
         div {
             font-size: 60px;
             color: blue;
             text-align: center;
-        }
-
-        footer {
-            text-align: center;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: white;
         }
     </style>
     <script>
@@ -45,10 +70,14 @@
 
 <body onload="startTime()" style="background-color: gray;">
     <h1> Rellotge Aplicacions Web </h1>
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../pagines/holamon.html">Hola món</a></li>
+        <li style="float:left"><a class="active" href="#rellotge">Rellotge</a></li>
+        <li><a href="../pagines/calendari.html">Google Calendar</a></li>
+        <li><a href="../pagines/horari.html">Horari</a></li>
+    </ul>
     <div id="txt"></div>
-    <footer>
-        <p>Pitja aquí per tornar a la pàgina principal: <a href="../index.html">Home</a></p>
-    </footer>
 </body>
 
 </html>

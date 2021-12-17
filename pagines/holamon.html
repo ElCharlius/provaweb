@@ -14,22 +14,54 @@ desde dins el document */
 
         h1 {
             color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
 
-        footer {
-            text-align: center;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: white;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
         }
+
+        li {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            float: left;
+        }
+
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: cadetblue;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+       
     </style>
 
 </head>
 
 <body style="background-color: gray;">
     <h1>Hola món</h1>
-    <footer>
-        <p>Pitja aquí per tornar a la pàgina principal: <a href="../index.html">Home</a></p>
-    </footer>
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li style="float:left"><a class="active" href="#holamon">Hola món</a></li>
+        <li><a href="../pagines/rellotge.html">Rellotge</a></li>
+        <li><a href="../pagines/calendari.html">Google Calendar</a></li>
+        <li><a href="../pagines/horari.html">Horari</a></li>
+    </ul>
+    <p><img src="../imatges/hello.png"></p>
 </body>
 
 </html>
